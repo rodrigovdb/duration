@@ -1,8 +1,6 @@
 # Duration
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/duration`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This is a gem to handle time duration, parsing a string to seconds and vice-versa.
 
 ## Installation
 
@@ -22,7 +20,35 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Informing a string and converting to the number of seconds
+
+```ruby
+require 'duration'
+
+# 3 minutes and 45 seconds
+> puts Duration.new('3:45').seconds
+225
+
+> puts Duration.new('15:03:45').seconds
+54225
+
+> puts Duration.new('63:03:45').seconds
+227025
+```
+
+### Informing the number of seconds and converting to a string
+```ruby
+require 'duration'
+
+> puts Duration.new(225).to_s
+03:45
+
+> puts Duration.new(54_225).to_s
+15:03:45
+
+> puts Duration.new(227_025).to_s
+63:03:45
+```
 
 ## Development
 
@@ -32,7 +58,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/duration. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/duration/blob/master/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at https://github.com/rodrigovdb/duration. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/rodrigovdb/duration/blob/master/CODE_OF_CONDUCT.md).
 
 ## License
 
@@ -40,4 +66,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the Duration project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/duration/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the Duration project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/rodrigovdb/duration/blob/master/CODE_OF_CONDUCT.md).
