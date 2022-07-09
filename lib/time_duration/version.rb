@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
-class Duration
+class TimeDuration
   VERSION = '0.1.1'
 end

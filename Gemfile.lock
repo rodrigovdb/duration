@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    duration (0.1.0)
+    time_duration (0.1.1)
 
 GEM
   remote: https://rubygems.org/
@@ -59,7 +59,6 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  duration!
   pry
   pry-nav
   rake (~> 13.0)
@@ -67,6 +66,7 @@ DEPENDENCIES
   rubocop (~> 1.21)
   rubocop-rake
   rubocop-rspec
+  time_duration!
 
 BUNDLED WITH
    2.2.32
