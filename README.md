@@ -1,4 +1,4 @@
-# Duration
+# TimeDuration
 
 This is a gem to handle time duration, parsing a string to seconds and vice-versa.
 
@@ -23,30 +23,30 @@ Or install it yourself as:
 ### Informing a string and converting to the number of seconds
 
 ```ruby
-require 'duration'
+require 'time_duration'
 
 # 3 minutes and 45 seconds
-> puts Duration.new('3:45').seconds
+> puts TimeDuration.new('3:45').seconds
 225
 
-> puts Duration.new('15:03:45').seconds
+> puts TimeDuration.new('15:03:45').seconds
 54225
 
-> puts Duration.new('63:03:45').seconds
+> puts TimeDuration.new('63:03:45').seconds
 227025
 ```
 
 ### Informing the number of seconds and converting to a string
 ```ruby
-require 'duration'
+require 'time_duration'
 
-> puts Duration.new(225).to_s
+> puts TimeDuration.new(225).to_s
 03:45
 
-> puts Duration.new(54_225).to_s
+> puts TimeDuration.new(54_225).to_s
 15:03:45
 
-> puts Duration.new(227_025).to_s
+> puts TimeDuration.new(227_025).to_s
 63:03:45
 ```
 
@@ -66,4 +66,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the Duration project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/rodrigovdb/duration/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the TimeDuration project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/rodrigovdb/duration/blob/master/CODE_OF_CONDUCT.md).
