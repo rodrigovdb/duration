@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require_relative 'time_duration/version'
+require_relative 'track_duration/version'
 
-class TimeDuration
+class TrackDuration
   attr_reader :seconds
 
   def initialize(param)

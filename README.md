@@ -1,4 +1,4 @@
-# TimeDuration
+# Track Duration
 
 This is a gem to handle time duration, parsing a string to seconds and vice-versa.
 
@@ -7,7 +7,7 @@ This is a gem to handle time duration, parsing a string to seconds and vice-vers
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'time_duration'
+gem 'track_duration'
 ```
 
 And then execute:
@@ -16,37 +16,37 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install time_duration
+    $ gem install track_duration
 
 ## Usage
 
 ### Informing a string and converting to the number of seconds
 
 ```ruby
-require 'time_duration'
+require 'track_duration'
 
 # 3 minutes and 45 seconds
-> puts TimeDuration.new('3:45').seconds
+> puts TrackDuration.new('3:45').seconds
 225
 
-> puts TimeDuration.new('15:03:45').seconds
+> puts TrackDuration.new('15:03:45').seconds
 54225
 
-> puts TimeDuration.new('63:03:45').seconds
+> puts TrackDuration.new('63:03:45').seconds
 227025
 ```
 
 ### Informing the number of seconds and converting to a string
 ```ruby
-require 'time_duration'
+require 'track_duration'
 
-> puts TimeDuration.new(225).to_s
+> puts TrackDuration.new(225).to_s
 03:45
 
-> puts TimeDuration.new(54_225).to_s
+> puts TrackDuration.new(54_225).to_s
 15:03:45
 
-> puts TimeDuration.new(227_025).to_s
+> puts TrackDuration.new(227_025).to_s
 63:03:45
 ```
 
@@ -66,4 +66,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the TimeDuration project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/rodrigovdb/duration/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the Track Duration project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/rodrigovdb/duration/blob/master/CODE_OF_CONDUCT.md).

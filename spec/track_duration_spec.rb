@@ -1,16 +1,16 @@
 # frozen_string_literal: true
 
-RSpec.describe Duration do
-  subject(:duration) { described_class.new(param) }
+RSpec.describe TrackDuration do
+  subject(:track_duration) { described_class.new(param) }
 
   let(:param) { '3:45' }
 
   it 'has a version number' do
-    expect(Duration::VERSION).not_to be nil
+    expect(TrackDuration::VERSION).not_to be nil
   end
 
   describe 'seconds' do
-    subject(:seconds) { duration.seconds }
+    subject(:seconds) { track_duration.seconds }
 
     context 'when param is a string' do
       it { is_expected.to eq(225) }
@@ -36,7 +36,7 @@ RSpec.describe Duration do
   end
 
   describe 'to_s' do
-    subject(:string) { duration.to_s }
+    subject(:string) { track_duration.to_s }
 
     context 'when param is a string' do
       it { is_expected.to eq('03:45') }
