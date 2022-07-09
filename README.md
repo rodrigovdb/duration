@@ -7,7 +7,7 @@ This is a gem to handle time duration, parsing a string to seconds and vice-vers
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'duration'
+gem 'time_duration'
 ```
 
 And then execute:
@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install duration
+    $ gem install time_duration
 
 ## Usage
 
